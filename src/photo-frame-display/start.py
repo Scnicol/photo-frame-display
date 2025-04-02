@@ -6,8 +6,8 @@ import logging
 import pi3d
 
 # Configuration
-PHOTO_SERVER_URL = "http://your-server-ip:port/next-photo"
-DISPLAY_TIME = 10  # Seconds to show each photo
+PHOTO_SERVER_URL = "http://localhost:5001/api/photos/random-photo"
+DISPLAY_TIME = 3  # Seconds to show each photo
 FPS = 10
 
 # Configure logging
