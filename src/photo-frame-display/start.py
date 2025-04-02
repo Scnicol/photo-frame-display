@@ -16,7 +16,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 class PhotoFrameDisplay:
     def __init__(self):
         logging.info("Initializing display...")
-        self.display = pi3d.Display.create(fullscreen=True, background=(0, 1, 0, 1), frames_per_second=FPS)
+        self.display = pi3d.Display.create(background=(0, 1, 0, 1), frames_per_second=FPS)
         self.shader = pi3d.Shader("uv_flat")
 
         self.sprite = pi3d.Sprite(camera=pi3d.Camera(is_3d=False), w=self.display.width, h=self.display.height)
